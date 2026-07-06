@@ -3,7 +3,7 @@ import { Send, Bot, User, Sparkles, Mic, Paperclip, Loader2 } from 'lucide-react
 import ReactMarkdown from 'react-markdown';
 import { useTranslation } from 'react-i18next';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://rag-system-5rjn.onrender.com/api';
 
 const ChatPage = () => {
   const { t, i18n } = useTranslation();
