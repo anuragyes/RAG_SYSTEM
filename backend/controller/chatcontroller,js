@@ -1,0 +1,22 @@
+import { processChatQuery } from '../services/ragService.js';
+
+export const handleChat = async (req, res) => {
+  try {
+    const { message, profile } = req.body;
+
+    if (!message) {
+      return res.status(400).json({ error: 'Message is required' });
+    }
+
+    // Call the RAG service to process the query and profile
+    const response = await processChatQuery(message, profile);
+
+    return res.status(200).json(response);
+  } catch (error) {
+    console.error('Error in chat controller:', error);
+    return res.status(500).json({ 
+      error: 'An error occurred while processing your request.',
+      details: error.message 
+    });
+  }
+};
