@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Upload, FileText, CheckCircle, AlertCircle, X } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://rag-system-5rjn.onrender.com/api';
 
 const UploadPage = () => {
   const [dragOver, setDragOver] = useState(false);
