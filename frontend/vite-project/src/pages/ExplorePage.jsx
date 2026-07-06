@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Search, ExternalLink, Building2, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://rag-system-5rjn.onrender.com/api';
 
 const CATEGORIES = ['All', 'Agriculture', 'Health', 'Housing', 'Education', 'Business', 'Pension', 'Employment', 'Energy', 'Women & Child', 'General'];
 
